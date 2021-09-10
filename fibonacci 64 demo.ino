@@ -1,8 +1,9 @@
 //Fibonacci 64 demo effects compilation
 //Yaroslaw Turbin 
-//https://vk.com/ldirko
-//https://www.reddit.com/user/ldirko/
 //https://twitter.com/ldir_ko
+//https://www.reddit.com/user/ldirko/
+//https://vk.com/ldirko
+
 
 #include <FastLED.h>
 #include "Adafruit_FreeTouch.h" //https://github.com/adafruit/Adafruit_FreeTouch
