@@ -1,5 +1,5 @@
 # Fibonacci-64-nano-demoreel
-This is demo reel firmware for Fibonacci 64 nano by Jason Coon https://twitter.com/jasoncoon_ 
+This is demo reel firmware for Fibonacci 64 nano by Jason Coon https://twitter.com/jasoncoon_/ 
 
 video: https://www.youtube.com/watch?v=crUQZcrYZpI 
 where to buy: https://www.evilgeniuslabs.org/  https://www.tindie.com/stores/jasoncoon/ 
