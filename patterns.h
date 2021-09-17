@@ -650,7 +650,7 @@ void pride()
     uint16_t pixelnumber = i;
     pixelnumber = (NUM_LEDS_CILINDR-1) - pixelnumber;
     // uint16_t ledindex = pgm_read_byte (FibonCilindrTable+pixelnumber);
-    byte x = i%28; byte y = i/28;
+    byte x = i%NUM_COLS_CILINDR; byte y = i/NUM_COLS_CILINDR;
     uint16_t ledindex = XY_CILINDR((x+y)%NUM_COLS_CILINDR, y);
     if (ledindex!=lastSafeIndex) nblend( leds[ledindex], newcolor, 64);
   }
