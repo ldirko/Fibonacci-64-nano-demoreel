@@ -116,7 +116,7 @@ void StartAnimation (){
 void centerButton (){
   static byte brIndex = 3;
   static byte bright[] = {0,16,32,64,96,128,160,192}; //8 steps 
-  brIndex = (brIndex+1)%7;
+  brIndex = (brIndex+1)%8;
   brigtness = bright[brIndex];
   FastLED.setBrightness(brigtness);
 }
