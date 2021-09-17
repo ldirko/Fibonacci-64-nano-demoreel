@@ -37,7 +37,7 @@ byte button2press = 0;                //state of touch2
 
 uint8_t gCurrentPatternNumber = 0;    // Index number of which pattern is current
 
-CRGB leds [NUM_LEDS_PLANAR+1];
+CRGB leds [NUM_LEDS+1];
 byte rain [(NUM_COLS_PLANAR+2)*(NUM_ROWS_PLANAR+2)];           //need for Digital Rain and Fire Comets effects
 
 Adafruit_FreeTouch touch0 = Adafruit_FreeTouch(A0, OVERSAMPLE_4, RESISTOR_0, FREQ_MODE_NONE);
@@ -59,7 +59,7 @@ void setup() {
   if (!touch2.begin())
     Serial.println("Failed to begin qt on pin A2");
 
-  FastLED.addLeds<LED_TYPE, DATA_PIN, COLOR_ORDER>(leds, 64)
+  FastLED.addLeds<LED_TYPE, DATA_PIN, COLOR_ORDER>(leds, NUM_LEDS)
   .setCorrection( TypicalLEDStrip );
   FastLED.setMaxPowerInVoltsAndMilliamps( 5, MAX_POWER_MILLIAMPS);   
   FastLED.setBrightness(brigtness);
